@@ -1,3 +1,63 @@
+Overview of Todo List Application using React:
+
+The Todo List application is a simple task management system built using React. It provides users with the ability to add, edit, mark as completed, and delete tasks. Each task has a status (completed or incomplete) and a priority (low, medium, or high). The application features a clean and user-friendly interface styled using Bootstrap and custom CSS.
+
+Key Features:
+
+1. Task List Display:
+
+- Display a list of tasks with their respective status (completed or not completed).
+- Each task has options to mark as completed or delete.
+- Each task displays its priority with a colored dot.
+  
+2. Task Management:
+
+- Add a new task with a specified priority.
+- Edit an existing task, including updating text and priority.
+- Mark a task as completed or incomplete.
+- Delete a task.
+  
+3. Styling:
+
+- The application is styled for a clean and visually appealing interface using Bootstrap and custom CSS.
+- Buttons and forms are styled for a more interactive and user-friendly experience.
+- The application has a beautiful background color to enhance aesthetics.
+  
+4. State Management:
+
+- React hooks, such as useState, are utilized for managing component state.
+- The application maintains state for tasks, new task input, selected priority, and the currently editing task.
+  
+How to Use:
+
+1. Add a New Task:
+
+- Enter the task in the input field.
+- Select the priority from the dropdown.
+- Click "Add Task."
+
+2. Edit a Task:
+
+-Click the "Edit" button next to the task you want to edit.
+- Update the task text and priority in the form.
+- Click "Save Changes" to save the edits or "Cancel" to discard changes.
+
+3. Mark a Task as Completed/Incomplete:
+
+- Click the "Complete" or "Undo" button next to a task.
+
+4. Delete a Task:
+
+-Click the "Delete" button next to a task.
+
+Task Summary:
+
+Total tasks and completed tasks are summarized at the bottom of the application.
+
+Conclusion:
+
+This Todo List application serves as a practical example of a task management system using React, offering a seamless user experience for organizing tasks based on priority and completion status. Users can easily add, edit, complete, and delete tasks in an intuitive and visually appealing interface.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
