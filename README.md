@@ -38,7 +38,7 @@ How to Use:
 
 2. Edit a Task:
 
--Click the "Edit" button next to the task you want to edit.
+- Click the "Edit" button next to the task you want to edit.
 - Update the task text and priority in the form.
 - Click "Save Changes" to save the edits or "Cancel" to discard changes.
 
@@ -48,7 +48,7 @@ How to Use:
 
 4. Delete a Task:
 
--Click the "Delete" button next to a task.
+- Click the "Delete" button next to a task.
 
 Task Summary:
 
