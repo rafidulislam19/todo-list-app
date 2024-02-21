@@ -130,6 +130,11 @@ const App = () => {
           </div>
         ))}
       </div>
+
+      <div className="task-summary">
+        <p>Total Tasks: {tasks.length}</p>
+        <p>Completed Tasks: {tasks.filter((task) => task.completed).length}</p>
+      </div>
     </div>
   );
 };
