@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 const priorities = {
   low: { color: "#6DBF45", label: "Low" },
