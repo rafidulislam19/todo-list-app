@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from "react";
 
 const priorities = {
@@ -19,6 +18,24 @@ const App = () => {
       setNewTask("");
       setPriority("low");
     }
+  };
+
+  const toggleTaskStatus = (index) => {
+    const updatedTasks = [...tasks];
+    updatedTasks[index].completed = !updatedTasks[index].completed;
+    setTasks(updatedTasks);
+  };
+
+  const deleteTask = (index) => {
+    const updatedTasks = [...tasks];
+    updatedTasks.splice(index, 1);
+    setTasks(updatedTasks);
+  };
+
+  const editTask = (index) => {
+    setEditingTask(index);
+    setNewTask(tasks[index].text);
+    setPriority(tasks[index].priority);
   };
 
   const saveEditedTask = () => {
@@ -92,9 +109,26 @@ const App = () => {
         )}
       </div>
 
-      <div className="task-summary">
-        <p>Total Tasks: {tasks.length}</p>
-        <p>Completed Tasks: {tasks.filter((task) => task.completed).length}</p>
+      <div className="task-list">
+        {tasks.map((task, index) => (
+          <div
+            key={index}
+            className={`task ${task.completed ? "completed" : ""}`}
+          >
+            <span>{task.text}</span>
+            <div className="task-actions">
+              <button onClick={() => toggleTaskStatus(index)}>
+                {task.completed ? "Undo" : "Complete"}
+              </button>
+              <button onClick={() => deleteTask(index)}>Delete</button>
+              <button onClick={() => editTask(index)}>Edit</button>
+            </div>
+            <div
+              className="task-priority"
+              style={{ backgroundColor: priorities[task.priority].color }}
+            ></div>
+          </div>
+        ))}
       </div>
     </div>
   );
